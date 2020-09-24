@@ -1,0 +1,173 @@
+html {
+    height: 100%;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: white;
+  }
+
+#mainContainer{
+    
+    height: 100%;
+    
+}
+
+
+#chatAndUsers{
+  display: flex;
+  width: 50%;
+  height: 75%;
+  margin: auto;
+}
+
+
+#chatWindow{
+    margin: 0px;
+    width: 100%;
+    height: 100%; 
+    flex-direction: column;
+    overflow-y: scroll;
+    border: none;
+    display: flex;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  height: 5px;
+  
+}
+
+
+.leftSideMessage{
+    max-width: 75%;
+    width: fit-content;
+    padding: 7px;
+    margin: 2px 5px 7px 5px;
+    border-radius: 7px 7px 7px 0px;
+    display: block;
+    overflow-wrap: break-word;
+}
+
+.rightSideMessage{
+    max-width: 75%;
+    width: fit-content;
+    padding: 7px;
+    align-self: flex-end;
+    margin: 2px 5px 7px 0px;
+    border-radius: 7px 7px 0px 7px;
+    display: block;
+    overflow-wrap: break-word;
+}
+
+.rightSideName{
+  align-self: flex-end;
+  display: block;
+  margin: 0px 7px;
+}
+
+.leftSideName{
+  margin: 0px 7px;
+}
+
+
+
+#membersOnline{
+  width: 25%;
+  padding-top: 10px;
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#userInputDiv{
+display: flex; 
+ width: 50%;
+ margin: auto;
+ flex-direction: row;
+}
+
+#userInput{
+  width: 100%;
+  margin: 0px auto;
+  padding: 10px;
+  border: none;
+  color: cornsilk;
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#userInput:focus{
+  outline: none;
+}
+
+.onlineUsersDisplay{
+  padding: 10px;
+  text-align: center;
+  border: solid white 1px;
+  margin: 3px;
+}
+
+#submitButton{
+  width: 26%;
+  background-color: white;
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#submitButton:focus{
+  outline:none;
+}
+
+#submitButton:hover{
+  background-color: rgb(223, 223, 223);
+}
+
+#submitButton:active{
+  background-color: rgb(197, 197, 197);
+}
+
+::placeholder{
+  color: white;
+  opacity: 0.5;
+} 
+
+
+#whiteSpaceChat{
+  background-color: white;
+  height:100%;
+  width: 100%;
+}
+
+#header{
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  width: 97.4%;
+  margin: auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  color: white;
+}
+
+span{
+  padding: 10px;
+}
+
+i{
+  margin-top: 19px;
+}
+
+#cp{
+  text-align: center;
+  padding: 15px;
+}
+
